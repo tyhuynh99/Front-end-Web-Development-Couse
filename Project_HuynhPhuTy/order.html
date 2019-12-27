@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The coffee - Contact</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style_order.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/sign.css">
+	<script src="js/sign.js"></script>
+	<!-- ********************************************************************** -->
+	<!-- ********************************************************************** -->
+	<!-- ********************************************************************** -->
+	 <!--Copy code sau vào thẻ head của trang-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	</style>
+    <!-- ********************************************************************** -->
+    <!-- ********************************************************************** -->
+    <!-- ********************************************************************** -->
+</head>
+<body>
+	<center>
+		<div class="container"> <!--Main-->
+				<!-- START HEADER -->
+			<header class="banner" id="Home">
+					<nav id="navbar"> <!-- START NAV -->
+						<!-- LOGO -->
+						<a href="index.html" class="brand-logo">
+						<img src="./Images/logo.png"><span><p>The Coffee</p></span>
+						</a>
+						<!-- NAV MENU -->
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="#Order">Order</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<!-- SIGN IN/UP BTN -->
+					<div  class="btn-sign-in">
+						<a href="#" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+					</div>
+					<p>Not a member ? <a href="#" onclick="document.getElementById('id02').style.display='block'">sign up</a></p>
+					<div id="id01" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<button type="submit">Login</button>
+			      		<label>
+			        		<input type="checkbox" checked="checked" name="remember"> Remember me
+			      		</label>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1; height: 50px;">
+			      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			     	 	<span class="psw">Forgot <a href="#">password?</a></span>
+			    	</div>
+		  		</form>
+			</div>
+			<div id="id02" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<label for="psw"><b>Repeat-Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="rpsw" required>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1">
+			      		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+			     	 	<button type="submit" class="signupbutton">Sign Up</button>
+			    	</div>
+		  		</form>
+					</nav><!-- END NAV -->
+			</header>
+			<div class="order">
+				<div class="order-show1">
+					<!-- ********************************************************************** -->
+					<!-- ********************************************************************** -->
+					<!-- ********************************************************************** -->
+					<!-- Copy nội dung bên dưới và paste vào vị trí muốn hiển thi slideshow-->
+   
+				   <!-- Hiệu chỉnh độ rộng và độ cao cho các ảnh trong slideshow-->
+				    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:540px;overflow:hidden;visibility:hidden;">
+				        <!-- Loading Screen -->
+				        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+				            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				            <div style="position:absolute;display:block;background:url('Images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+				        </div>
+				        
+				       <!-- Hiệu chỉnh độ rộng và độ cao cho các ảnh trong slideshow-->
+				        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:540px;overflow:hidden;">
+				            <div>
+				                <img data-u="image" src="Images/order2.jpg" />
+				            </div>
+				            <a data-u="any" href="http://www.jssor.com" style="display:none">Simple Fade Slideshow</a>
+				            <div>
+				                <img data-u="image" src="Images/order3.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="Images/order4.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="Images/order5.jpg" />
+				            </div>
+				        </div>
+				        <!-- Bullet Navigator -->
+				        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+				            <!-- bullet navigator item prototype -->
+				            <div data-u="prototype" style="width:16px;height:16px;"></div>
+				        </div>
+				        <!-- Arrow Navigator -->
+				        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+				        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+				    </div>
+				    <!-- #endregion Jssor Slider End -->
+				    <!-- #endregion Jssor Slider End -->
+				    <!-- #endregion Jssor Slider End -->
+				    <!-- #endregion Jssor Slider End -->
+					<!-- ********************************************************************** -->
+					<!-- ********************************************************************** -->
+					<!-- ********************************************************************** -->
+				</div>
+				<div class="order-form">
+					<form action="/action_page.php">
+						<div class="centerform">
+					    <label for="coffee">Coffee</label>
+					    <select id="coffee" name="coffee">
+					    	<option value="coffee">None</option>
+					      	<option value="coffee">Coffee</option>
+					      	<option value="coffee">Coffee</option>
+					      	<option value="coffee">Coffee</option>
+					      	<option value="coffee">Coffee</option>
+					      	<option value="coffee">Coffee</option>
+					      	<option value="coffee">Coffee</option>
+					    </select>
+					    <label for="tea">Tea</label>
+					    <select id="tea" name="tea">
+					      <option value="tea">None</option>
+					      <option value="tea">Tea</option>
+					      <option value="tea">Tea</option>
+					      <option value="tea">Tea</option>
+					      <option value="tea">Tea</option>
+					      <option value="tea">Tea</option>
+					      <option value="tea">Tea</option>
+					    </select>
+					    <label for="cakes">Cakes</label>
+					    <select id="cakes" name="cakes">
+					      <option value="cakes">None</option>
+					      <option value="cakes">Cakes</option>
+					      <option value="cakes">Cakes</option>
+					      <option value="cakes">Cakes</option>
+					      <option value="cakes">Cakes</option>
+					      <option value="cakes">Cakes</option>
+					      <option value="cakes">Cakes</option>
+					    </select>
+					    <label for="others">Others</label>
+					    <select id="others" name="others">
+					      <option value="others">None</option>
+					      <option value="others">Others</option>
+					      <option value="others">Others</option>
+					      <option value="others">Others</option>
+					      <option value="others">Others</option>
+					      <option value="others">Others</option>
+					      <option value="others">Others</option>
+					    </select>
+					    </div>
+						<div class="centerform2">
+					    <label for="fname">First Name</label>
+					    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+					    <label for="lname">Last Name</label>
+					    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+					    <label for="address">Address</label>
+					    <input type="text" id="address" name="address" placeholder="Your address.." required>
+					    <input type="submit" value="Submit" style="font-size: 20px; margin-top: 47px;">	
+						</div>
+		    
+					 </form>
+				</div>
+			</div>
+			<footer>
+					<div class="ftr-brandname">
+						The Coffee
+					</div>
+					<div class="ftr-logo">
+						<img src="./Images/logo.png">
+					</div>
+					<div class="ftr-phone">
+						<i class="fas fa-phone"> 0123456789</i>
+					</div>
+					<div class="ftr-addr">
+						<i class="fas fa-map-marked-alt"> To Ky Street, Distric 12, HCMC</i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-twitter"></i>
+					</div>
+			</footer>
+		</div>
+	</center>
+</body>
+</html>

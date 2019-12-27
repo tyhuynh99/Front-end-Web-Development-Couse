@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Khand|Merienda+One|Signika');
+.ab{
+	width: 100%;
+	height: 2300px;
+	background-color: #DFD0B2;
+	position: relative;
+	z-index: -1;
+}
+.ab .ab-box{
+	width: 750px;
+	height: 450px;	
+	background-color: white;
+	position: relative;
+	top: 100px;
+	left: 50px;
+	-webkit-box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+}
+
+.ab .ab-box-content{
+	width: 400px;
+	height: 400px;
+	float: right; 
+	margin-top: 50px;
+	margin-right: 30px;
+	padding: 0px;
+	color: black;
+
+}
+
+.ab .ab-box-content p{
+	font-size: 30px;
+	padding-top: 0px;
+	text-align: center;
+}
+
+.ab .ab-box-content a{
+	font-size: 20px;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+}
+.ab .ab-box-img{
+	background-image: url("../Images/ab2.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 400px;
+	height: 500px;
+	background-color: orange;
+	position: absolute;
+	left: -150px;
+	top: 70px;
+	-webkit-box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 29px -2px rgba(0,0,0,0.75);
+}
+.ab-box:nth-child(2){
+	top:400px;
+	left: -100px;
+}
+
+.ab-box:nth-child(2) .ab-box-content{
+	width: 400px;
+	height: 400px;
+	float: left; 
+	margin-top: 50px;
+	margin-left: 30px;
+	padding: 0px;
+	color: black;
+}
+.ab-box:nth-child(2) .ab-box-img{
+	left: 500px;
+	
+}
+.ab-box:nth-child(3){
+	top: 700px;
+}
+.ab-box:nth-child(2) .ab-box-img{
+	background-image: url("../Images/ab3.jpg");
+	background-position: 30%;
+}
+.ab-box:nth-child(3) .ab-box-img{
+	background-image: url("../Images/ab4.jpg");
+}

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee - Menu</title>
+	<link rel="stylesheet" href="./CSS/style_menu.css">
+	<link rel="stylesheet" href="./CSS/footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/quote.css">
+  	<link rel="stylesheet" type="text/css" href="CSS/sign.css">
+	<script src="js/sign.js"></script>
+  	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 3000);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('Images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('Images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+</head>
+<body onselectstart="return false">
+	<center>
+		<div class="container"> <!--Main-->
+				<!-- START HEADER -->
+			<header class="banner" id="Home">
+					
+					<nav id="navbar"> <!-- START NAV -->
+						<!-- LOGO -->
+						<a href="index.html" class="brand-logo">
+						<img src="./Images/logo.png"><span><p>The Coffee</p></span>
+						</a>
+						<!-- NAV MENU -->
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="#Home">Menu</a></li>
+							<li><a href="order.html">Order</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<!-- SIGN IN/UP BTN -->
+					<div  class="btn-sign-in">
+						<a href="#" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+					</div>
+					<p>Not a member ? <a href="#" onclick="document.getElementById('id02').style.display='block'">sign up</a></p>
+					<div id="id01" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<button type="submit">Login</button>
+			      		<label>
+			        		<input type="checkbox" checked="checked" name="remember"> Remember me
+			      		</label>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1; height: 50px;">
+			      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			     	 	<span class="psw">Forgot <a href="#">password?</a></span>
+			    	</div>
+		  		</form>
+			</div>
+			<div id="id02" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<label for="psw"><b>Repeat-Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="rpsw" required>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1">
+			      		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+			     	 	<button type="submit" class="signupbutton">Sign Up</button>
+			    	</div>
+		  		</form>
+					</nav><!-- END NAV -->
+
+			</header>
+			<!--**********************************************-->
+			<!--**********************************************-->
+			<!--*****************Slide show*******************-->
+			<div class="menu-slideshow">
+				<!-- Hiệu chỉnh độ rộng và độ cao cho các ảnh trong slideshow-->
+			    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1280px;height:400px;overflow:hidden;visibility:hidden;">
+			        <!-- Loading Screen -->
+			        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+			            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			            <div style="position:absolute;display:block;background:url('Images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+			        </div>
+			        
+			       <!-- Hiệu chỉnh độ rộng và độ cao cho các ảnh trong slideshow-->
+			        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:400px;overflow:hidden;">
+			            <div>
+			                <img data-u="image" src="Images/product/cafe03.jpg" />
+			            </div>
+			            <a data-u="any" href="http://www.jssor.com" style="display:none">Simple Fade Slideshow</a>
+			            <div>
+			                <img data-u="image" src="Images/product/cafe01.jpg" />
+			            </div>
+			            <div>
+			                <img data-u="image" src="Images/product/cafe02.jpg" />
+			            </div>
+			            <div>
+			                <img data-u="image" src="Images/product/cafe04.jpg" />
+			            </div>
+			        </div>
+			        <!-- Bullet Navigator -->
+			        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+			            <!-- bullet navigator item prototype -->
+			            <div data-u="prototype" style="width:16px;height:16px;"></div>
+			        </div>
+			        <!-- Arrow Navigator -->
+			        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+			        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+			    </div>
+			    <!-- #endregion Jssor Slider End -->
+		    </div>
+			<!--**********************************************-->
+			<!--**********************************************-->
+			<div class="menu-br">
+				
+			</div>
+			<!--**********************************************-->
+			<div class="menu-nav">
+				<div class="box">
+					<a href="#coffee">Coffee</a>
+				</div>			
+				<div class="box">
+					<a href="#tea">Tea</a>
+				</div>
+				<div class="box">
+					<a href="#cakes">Cakes</a>
+				</div>
+				<div class="box">
+					<a href="#others">Others</a>
+				</div>
+			</div>
+			<!--Coffee****************************************-->
+			<div class="menu-cf" id="coffee">
+				<div class="menu-heading">
+					Coffee
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/01.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Latte</h2> Caffè latte is a coffee-based drink made primarily from espresso and steamed milk
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Cafe <b>Latte</b>					               
+						        </span>
+								<span class="product-caption">
+								    Espresso + Milk + Milk foam
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 5.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Cappuccino</h2> Cappuccino named for its similarity in color to the robes of Capuchin monks
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Cappuccino</b>            
+						        </span>
+								<span class="product-caption">
+								    Espresso + Milk
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 3.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/03.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Americano</h2>This is essentially a watered-down shot of espresso with the resulting flavor arriving very close to brewed coffee.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Americano</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    Espresso + water
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 7.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/04.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Macchiato</h2>A very simple drink devoid of the flavored caramel and chocolate treatment better suited to an ice-cream parlor.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Macchiato</b>
+						        </span>
+								<span class="product-caption">
+								    Espresso + Milk + Milk foam
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 6.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/05.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Cold Brew</h2>There are few things more satisfying than the cool, caffeine-giving sip of a cup of iced coffee.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Cold Brew</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    Dark Coffee + freezer
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 15.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/coffee/06.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Dark Coffee</h2>Is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain "Coffea" species.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Cafe <b>Dark</b>
+						        </span>
+								<span class="product-caption">
+								    Dark coffee + sugar
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 2.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+			<!--*****************Slide show*******************-->
+			<div class="menu-br">
+				
+			</div>
+			<!--**********************************************-->
+			<!--Tea****************************************-->
+			<div class="menu-tea" id="tea">
+				<div class="menu-heading">
+					Tea
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/01.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Cafe Latte</h2> Caffè latte is a coffee-based drink made primarily from espresso and steamed milk
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Cafe <b>Latte</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    Latte = Espresso + Milk + Milk foam
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 5.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/02.png" style="width: 200px; height: 230px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Chai Latte</h2>Black tea infused with cinnamon, clove, and other warming spices
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Chai</b> Latte
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    Milk, Water, Chai Tea Concentrate
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 8.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/03.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Matcha Latte</h2>Smooth and creamy matcha is lightly sweetened and served with steamed milk.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Matcha</b> Latte
+						        </span>
+								<span class="product-caption">
+								    Milk, Matcha Tea Blend
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 8.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/04.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Berry Tea</h2>Iced tea is re-imagined thanks to inspiration from a classic summer cocktail.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Berry</b> Tea
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    Ice, Apple Juice
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 20.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/05.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Green Tea</h2>Green tea is blended with mint, lemongrass and lemon verbena, then lightly sweetened and given a good shake.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Green Tea</b>
+						        </span>
+								<span class="product-caption">
+								    AN INFUSION, ICE, LIQUID CANE SUGAR
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star "></i>
+										<i class="fa fa-star "></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 18.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/tea/06.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Chai Eggnog</h2>The complex spiciness of chai is infused with steamed eggnog in this holiday favorite.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                <b>Chai Eggnog</b>
+						        </span>
+								<span class="product-caption">
+								    Water, Eggnog, Chai Tea Concentrate
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 25.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--**********************************************-->
+			<!--**********************************************-->
+			<!--Cakes****************************************-->
+			<div class="menu-br">
+				
+			</div>
+			<!--**********************************************-->
+			<div class="menu-cake" id="cakes">
+				<div class="menu-heading">
+					Cakes
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/01.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Croissant</h2>Light, flakey, 100 percent butter croissant dough is wrapped around two chocolate batons to create a perfect balance.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Chocolate <b>Croissant</b>
+						        </span>
+								<span class="product-caption">
+								    enriched wheat flour + water + semisweet chocolate
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 6.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Croissant</h2>This classic Croissant is made with 100 percent butter to create a golden.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Butter <b>Croissant</b>
+						        </span>
+								<span class="product-caption">
+								    enriched wheat flour, water, sugar, eggs
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 3.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/03.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Scone</h2>A traditional scone with blueberries, buttermilk and lemon.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Blueberry <b>Scone</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    enriched flour, enriched flour, dried blueberries
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 9.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/04.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Cookie</h2>We mix a generous amount of single-origin chocolate into every Chocolate Chip Cookie.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Chocolate Chip <b>Cookie</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    unsalted butter, semi-sweet chocolate chip
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 5.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/05.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Cheese Danish</h2>A flaky pastry folded around reduced-fat cream cheese.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Cheese <b>Danish</b>
+						        </span>
+								<span class="product-caption">
+								    enriched wheat flour, neufchatel cheese
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 5.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/cakes/06.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>Blueberry Muffin</h2>This delicious muffin is dotted throughout with sweet, juicy blueberries and a hint of lemon.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                Blueberry <b>Muffin</b>
+						        </span>
+								<span class="product-caption">
+								    sugar, enriched wheat flour, blueberries
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 3.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--Other****************************************-->
+			<div class="menu-br">
+				
+			</div>
+			<!--**********************************************-->
+			<div class="menu-other" id="others">
+				<div class="menu-heading">
+					Others
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/01.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>GIFT BOX</h2>SHOW YOUR LOVE WITH SOME COOKIES.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                HOLIDAY <b>GIFT BOX</b>
+						        </span>
+								<span class="product-caption">
+									9-pack bag each of Double Chocolate Mint, Pumpkin Spice, Dark Cacao, Vanilla Bean
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 25.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>PUMPKIN SPICE</h2>WONDERFULLY FLAVORFUL PUMPKIN SPICE COCONUT COOKIES!
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                PUMPKIN <b>SPICE</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    9-PACK (8 BAGS)
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 15.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>PUMPKIN SPICE</h2>WONDERFULLY FLAVORFUL PUMPKIN SPICE COCONUT COOKIES!
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                PUMPKIN <b>SPICE</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    9-PACK (8 BAGS)
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 15.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+				</div>
+				<div class="coffeeList">
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/01.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>GIFT BOX</h2>SHOW YOUR LOVE WITH SOME COOKIES.
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                HOLIDAY <b>GIFT BOX</b>
+						        </span>
+								<span class="product-caption">
+									9-pack bag each of Double Chocolate Mint, Pumpkin Spice, Dark Cacao, Vanilla Bean
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 25.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>PUMPKIN SPICE</h2>WONDERFULLY FLAVORFUL PUMPKIN SPICE COCONUT COOKIES!
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                PUMPKIN <b>SPICE</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    9-PACK (8 BAGS)
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 15.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img src="./Images/product/other/02.png" style="width: 250px; height: 250px;" class="product-img">
+							<div class="product-detail">
+					    		<h2>PUMPKIN SPICE</h2>WONDERFULLY FLAVORFUL PUMPKIN SPICE COCONUT COOKIES!
+					     	</div>
+					     	<div class="back-text">
+					     		FAS
+					     	</div>
+						</div>
+						<div class="card-body">
+							<div class="product-desc">
+						        <span class="product-title">
+						                PUMPKIN <b>SPICE</b>
+						                <span class="badge">
+						                  New
+						                </span>
+						        </span>
+								<span class="product-caption">
+								    9-PACK (8 BAGS)
+								</span>
+								<div class="rating">
+									<span class="product-rating" >
+										<i class="fa fa-star" ></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star grey"></i>
+									</span>
+								</div>
+						    </div>
+						    <div class="price">
+						    	$ 15.00
+						    </div>
+						    <a href="order.html" class="order">
+						    	<h1>BUY NOW !</h1>
+						    </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--**********************************************-->
+			<!--**********************************************-->
+			<!--**********************************************-->
+			<!--Footer****************************************-->
+			<footer>
+					<div class="ftr-brandname">
+						The Coffee
+					</div>
+					<div class="ftr-logo">
+						<img src="./Images/logo.png">
+					</div>
+					<div class="ftr-phone">
+						<i class="fas fa-phone"> 0123456789</i>
+					</div>
+					<div class="ftr-addr">
+						<i class="fas fa-map-marked-alt"> To Ky Street, Distric 12, HCMC</i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-twitter"></i>
+					</div>
+			</footer>
+		</div>
+	</center>
+  	<script src="js/jquery-3.3.1.min.js"></script>
+  	<script  src="js/index.js"></script>
+</body>
+</html>

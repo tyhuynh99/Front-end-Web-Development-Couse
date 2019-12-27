@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Khand|Merienda+One|Signika');
+
+footer{
+	width: 100%;
+	height: 250px;
+	background-color: #3A2306;
+	padding-top: 30px;
+}
+
+.ftr-logo img{
+	margin-bottom: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.icon-box{
+	font-size: 20px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.icon-box:nth-child(5){
+	background-color: #38529A;
+	margin-left: 0px;
+}
+
+.icon-box:nth-child(6){
+ 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.icon-box:nth-child(7){
+	background-color: #27A5DA;
+	color: white;
+}
+
+.icon-box:nth-child(5):hover{
+	background-color: #4e73d8;
+}
+.ftr-brandname{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 30px;
+	font-family: 'Merienda One', cursive;
+}
+
+.ftr-phone{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.ftr-addr{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 20px;
+}

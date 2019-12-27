@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee - About</title>
+	<link rel="stylesheet" href="./CSS/style_about.css">
+	<link rel="stylesheet" href="./CSS/footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/quote.css">
+  	<link rel="stylesheet" type="text/css" href="CSS/sign.css">
+	<script src="js/sign.js"></script>
+  		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1000,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 500);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            
+            /* size of bullet elment */
+            width: 10px;
+            height: 10px;
+            background: url('Images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('Images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+</head>
+<body onselectstart="return false">
+	<center>
+		<div class="container"> <!--Main-->
+				<!-- START HEADER -->
+				<header class="banner" id="Home">
+					<div class="head-info" style="">
+						Benefits<br>of<br>Coffee
+					</div>
+					<div class="benefit-left">
+						Reduces cancer  <i class="fas fa-user-md"></i>
+					</div>
+					<div class="benefit-left">
+						Reduces heart desease  <i class="fas fa-heartbeat"></i>
+					</div>
+					<div class="benefit-left">
+						Burns fat  <i class="fas fa-burn"></i>
+					</div>				
+					<div class="benefit-right">
+						<i class="fas fa-tint"></i> Reduces Diabetes  
+					</div>	
+					<div class="benefit-right">
+						<i class="fas fa-brain"></i> Reduces Alzheimer's 
+					</div>
+					<div class="benefit-right">
+						<i class="fas fa-bolt"></i> Has energy  
+					</div>																		
+					<img src="./Images/logo.png" class="logo-img" style="width: 400px; height: 420px;">
+					<nav id="navbar"> <!-- START NAV -->
+						<!-- LOGO -->
+						<a href="index.html" class="brand-logo">
+						<img src="./Images/logo.png"><span><p>The Coffee</p></span>
+						</a>
+						<!-- NAV MENU -->
+						<ul>
+							<li><a href="#Home">About</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="order.html">Order</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<!-- SIGN IN/UP BTN -->
+					<div  class="btn-sign-in">
+						<a href="#" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+					</div>
+					<p>Not a member ? <a href="#" onclick="document.getElementById('id02').style.display='block'">sign up</a></p>
+					<div id="id01" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<button type="submit">Login</button>
+			      		<label>
+			        		<input type="checkbox" checked="checked" name="remember"> Remember me
+			      		</label>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1; height: 50px;">
+			      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			     	 	<span class="psw">Forgot <a href="#">password?</a></span>
+			    	</div>
+		  		</form>
+			</div>
+			<div id="id02" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<label for="psw"><b>Repeat-Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="rpsw" required>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1">
+			      		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+			     	 	<button type="submit" class="signupbutton">Sign Up</button>
+			    	</div>
+		  		</form>
+					</nav><!-- END NAV -->
+
+				</header>
+				<!--<div class="quote-br">
+				<div class="quote">
+					<blockquote>"Make your next event one to remember with our elegant indoor-outdoor cocktail and dining spaces."</blockquote>
+				</div>-->
+				<div class="ab-content">
+					<div class="place">
+						<div class="place-heading">
+							Space
+						</div>
+						<div class="place-content">
+							<div class="place-img">
+								<img src="./Images/ab01.jpg" style="height: 300px;">
+							</div>
+							<div class="content">
+								<h3>Workspace</h3>
+								<p>A workspace for all who need it, The Coffee is a stunning whitewashed affair with oodles of natural light playing on its modern surfaces. A dynamic space bristling with energy and good vibes, you will be wearing a smile on your face as you work.</p>
+							</div>
+						</div>
+						<div class="place-content">
+							<div class="place-img">
+								<img src="./Images/ab02.jpg" style="height: 300px;">
+							</div>
+							<div class="content">
+								<h3>Studyspace</h3>
+								<p>The place where you can study or work, have chill-out moments and be plugged into fast Wi-Fi, The Coffee attracts digital nomads trotting around the globe, fledgling startups.</p>
+							</div>
+						</div>	
+
+
+						<div class="place-content">
+							<div class="place-img-right">
+								<img src="./Images/ab03.jpg" style="height: 300px;">
+							</div>
+							<div class="content-right">
+								<h3>Party</h3>
+								<p>This was the best party that I`ve ever attended in my life! It`s unique foam theme was extremely fun. It was basically a poolside party with a giant foam dispenser poring out large amount of foam on the dance floor next to the swimming pool.</p>
+							</div>
+						</div>	
+						<div class="place-content">
+							<div class="place-img-right">
+								<img src="./Images/ab04.jpg" style="height: 300px; width: 380px;">
+							</div>
+							<div class="content-right">
+								<h3>Others</h3>
+								<p>A lovely café serving fresh local produce,homemade soups, cakes, sausage rolls, cooked breakfasts ,hot lunches and delicious Italian roasted coffee.</p>
+							</div>
+						</div>	
+					</div>
+					<div class="barista">
+						<div class="place-heading">
+							Barista
+						</div>
+						<div>
+							<div id="jssor_1" style="position:absolute;margin:0 auto;top:150px;right: 50%;width:600px;height:600px;overflow:hidden;visibility:hidden; margin-right: 30px;">
+					        <!-- Loading Screen -->
+					        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+					            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					            <div style="position:absolute;display:block;background:url('Images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+					        </div>
+        
+						       <!-- Hiệu chỉnh độ rộng và độ cao cho các ảnh trong slideshow-->
+						        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:600px;overflow:hidden;">
+						            <div>
+						                <img data-u="image" src="Images/about/barista1.jpg" />
+						            </div>
+						            <a data-u="any" href="http://www.jssor.com" style="display:none">Simple Fade Slideshow</a>
+						            <div>
+						                <img data-u="image" src="Images/about/barista2.jpg" />
+						            </div>
+						            <div>
+						                <img data-u="image" src="Images/about/barista3.jpg" />
+						            </div>
+						            <div>
+						                <img data-u="image" src="Images/about/barista4.jpg" />
+						            </div>
+						        </div>
+						    </div>
+						    <!-- #endregion Jssor Slider End -->
+						</div>
+						    <div class="barista-content">
+						    	<h3 style="margin-top: 80px;">Barista</h3>
+						    	<p style="margin-left: 30px; margin-right: 30px; font-size: 25px;">Our coffee masters have distilled their years of tasting knowledge down to three simple questions to help you find a Starbucks coffee you’re sure to love.</p>
+						    </div>
+					</div>
+					<div class="place2">
+						<div class="place-heading">
+							Coffee
+						</div>
+						<div class="place-content">
+							<div class="place-img-right">
+								<img src="./Images/about/cf3.jpg" style="height: 300px;">
+							</div>
+							<div class="content-right">
+								<h3>Caffè Americano</h3>
+								<p>A type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from traditionally brewed coffee.</p>
+							</div>
+						</div>	
+						<div class="place-content">
+							<div class="place-img-right">
+								<img src="./Images/about/cf1.jpg" style="height: 300px;">
+							</div>
+							<div class="content-right">
+								<h3>Cappuccino</h3>
+								<p>Cappuccino, named for its similarity in color to the robes of Capuchin monks, is simply a shot of espresso with steamed, wet milk, not necessarily slathered with a frothy, dry foam.</p>
+							</div>
+						</div>	
+						<div class="place-content">
+							<div class="place-img">
+								<img src="./Images/about/cf2.jpg" style="height: 300px;">
+							</div>
+							<div class="content">
+								<h3>Café Latte</h3>
+								<p>This is very popular drink in America probably due to its sweet, mellow flavor. One shot of espresso is mixed with 6 to 8 ounces of steamed milk, then topped with foam - if you prefer.</p>
+							</div>
+						</div>
+						<div class="place-content">
+							<div class="place-img">
+								<img src="./Images/about/cf6.jpg" style="height: 300px;">
+							</div>
+							<div class="content">
+								<h3>Pure Espresso</h3>
+								<p>This is the intense experience of coffee that most Europeans prefer and believe Americans are too scared to try. Proper Espresso is served in small demitasse-style cups and consumed promptly after extraction in the following types of servings.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			<footer>
+				<div class="ftr-brandname">
+					The Coffee
+				</div>
+				<div class="ftr-logo">
+					<img src="./Images/logo.png">
+				</div>
+				<div class="ftr-phone">
+					<i class="fas fa-phone"> 0123456789</i>
+				</div>
+				<div class="ftr-addr">
+					<i class="fas fa-map-marked-alt"> To Ky Street, Distric 12, HCMC</i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-twitter"></i>
+				</div>
+			</footer>
+		</div>
+	</center>
+  	<script src="js/jquery-3.3.1.min.js"></script>
+  	<script  src="js/index.js"></script>
+</body>
+</html>

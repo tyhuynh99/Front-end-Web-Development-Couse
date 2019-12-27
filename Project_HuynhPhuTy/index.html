@@ -1,0 +1,243 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee - Home</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/header.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/about-in-main.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/menu-in-main.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/quote.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+  	<link rel="stylesheet" type="text/css" href="CSS/sign.css">
+	<script src="js/sign.js"></script>
+</head>
+<body>
+	<center>
+		<div class="container"> <!--Main-->
+			<!-- START HEADER -->
+			<header class="banner" id="Home">
+				<!-- BOX ON BACKGROUND -->
+				<div class="banner-box">
+					<p class="wow fadeInLeft">WANT A<br>COFFEE ?</p>
+					<a href="order.html" class="wow fadeInDown">ORDER NOW</a>
+				</div><!-- END BOX -->
+				<nav id="navbar"> <!-- START NAV -->
+					<!-- LOGO -->
+					<a href="#Home" class="brand-logo">
+						<img src="./Images/logo.png"><span><p>The Coffee</p></span>
+					</a>
+					<!-- NAV MENU -->
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<!-- SIGN IN/UP BTN -->
+					<div  class="btn-sign-in">
+						<a href="#" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+					</div>
+					<p>Not a member ? <a href="#" onclick="document.getElementById('id02').style.display='block'">sign up</a></p>
+					<div id="id01" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<button type="submit">Login</button>
+			      		<label>
+			        		<input type="checkbox" checked="checked" name="remember"> Remember me
+			      		</label>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1; height: 50px;">
+			      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			     	 	<span class="psw">Forgot <a href="#">password?</a></span>
+			    	</div>
+		  		</form>
+			</div>
+			<div id="id02" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<label for="psw"><b>Repeat-Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="rpsw" required>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1">
+			      		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+			     	 	<button type="submit" class="signupbutton">Sign Up</button>
+			    	</div>
+		  		</form>
+			</div>
+				</nav><!-- END NAV -->
+			</header>
+			<!-- END HEADER -->
+			<div class="ab" id="About"> <!-- START ABOUT -->
+				<div class="ab-box wow fadeInDown">
+					<div class="ab-box-content  wow fadeInRight">
+						<p>THE PERFECT PLACE</p>
+						<p>Cozy co-working space that will make you feel like working at your best friend's place. Nice atmosphere and location.</p>
+						<a href="about.html"><u>READ MORE</u></a>
+					</div>
+					<div class="ab-box-img  wow fadeInLeft"></div>
+				</div>
+				<div class="ab-box wow fadeInDown">
+					<div class="ab-box-content wow fadeInLeft">
+						<p class="ab-box-title">THE PERFECT BARISTA</p>
+						<p>There's a good reason why you often pay through the nose for lattes, cappuccinos and other cafe-style drinks at your local java joint.</p>
+						<a href="about.html"><u>READ MORE</u></a>
+					</div>
+					<div class="ab-box-img wow fadeInRight"></div>
+				</div>
+				<div class="ab-box wow fadeInDown">
+					<div class="ab-box-content wow fadeInRight">
+						<p>THE PERFECT COFFEE</p>
+						<p>It sounds easy enough. Brew the coffee, keep the stuff that’s left, package it, and let the consumer put the water back in later.</p>
+						<a href="about.html"><u>READ MORE</u></a>
+					</div>
+					<div class="ab-box-img wow fadeInLeft"></div>
+				</div>
+			</div><!-- END ABOUT -->
+			<div class="quote-br">
+				<div class="quote">
+					<blockquote>"The powers of a man's mind are directly proportioned to the quantity of coffee he drinks."</blockquote>
+				</div>
+			</div>
+			<div class="mn">
+				<div class="cafelist">
+					<div class="list-box">
+						<div class="list-box-name">Category 1</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$5.00
+							</div>
+							<div class="like">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="list-box">
+						<div class="list-box-name">Category 2</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$6.00
+							</div>
+						</div>
+					</div>
+
+					<div class="list-box">
+						<div class="list-box-name">Category 3</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$4.00
+							</div>
+							<div class="like">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="list-box">
+						<div class="list-box-name">Category 4</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$1.00
+							</div>
+							<div class="like">
+
+							</div>
+						</div>
+					</div>
+
+					<div class="list-box">
+						<div class="list-box-name">Category 5</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$7.00
+							</div>
+							<div class="like">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="list-box">
+						<div class="list-box-name">Category 6</div>
+						<div class="list-box-img">
+							<a href="order.html" class="ord" >Order</a>
+						</div>
+						<div class="list-box-content">
+							<div class="price">
+								$5.50
+							</div>
+							<div class="like">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="menu.html">
+					<div  class="seemore">Click here to see more</div>
+				</a>
+			</div>
+			<footer>
+				<div class="ftr-brandname">
+					The Coffee
+				</div>
+				<div class="ftr-logo">
+					<img src="./Images/logo.png">
+				</div>
+				<div class="ftr-phone">
+					<i class="fas fa-phone"> 0123456789</i>
+				</div>
+				<div class="ftr-addr">
+					<i class="fas fa-map-marked-alt"> To Ky Street, Distric 12, HCMC</i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="icon-box">
+					<i class="fab fa-twitter"></i>
+				</div>
+			</footer>
+		<!--End Main-->
+		</div>
+	</center>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script  src="js/index.js"></script>
+
+</body>
+</html>

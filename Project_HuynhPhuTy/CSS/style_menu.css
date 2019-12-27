@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Khand|Merienda+One|Signika');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Nova+Square');
+@import url('https://fonts.googleapis.com/css?family=Galada');
+@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	z-index: 1;
+}
+
+.brand-logo img{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: -10px;
+}
+.banner{
+	width: 100%;
+	height: 110px;
+	background-color: red;
+}
+
+#navbar{
+		background-color: rgb(58, 35, 6);
+}
+nav{
+	position: fixed;
+	z-index: 2px;
+	width: 100%;
+	height: 70px;
+	/*background-color: transparent;*/
+	/*background-color: rgb(58, 35, 6);*/
+	color: white;
+}
+.brand-logo {
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 40px; 
+	line-height: 70px;
+	color: white;
+	font-family: 'Merienda One', cursive;
+}
+
+nav ul{
+	list-style-type: none;
+	margin-left: 530px;
+}
+
+nav ul li{
+	float: left;
+	text-decoration: none;
+	padding-left: 40px;
+	text-align: center;
+	font-family: 'Khand', sans-serif;
+	line-height: 40px;
+}
+
+
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	transition: 0.5s;
+}
+
+.logo-img{
+	position: absolute;
+	left: 570px;
+	top: 300px;
+	z-index: 0;
+}
+.btn-sign-in{
+	float: right;
+	width: 100px;
+	height: 50px;
+	background-color: #89330E;
+	margin-top: -6px;
+	margin-right: 30px;
+	font-family: 'Signika', sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+nav p{
+	float: right;
+	margin-right: 10px;
+	line-height: 5px;
+	color: white;
+}
+
+nav p a{
+	text-decoration: none;
+	color: #C2A878;
+}
+.btn-sign-in a{
+	padding: 0px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #F3ECAF;
+	transition: 0.5s;
+}
+
+
+nav ul li a:hover{
+	font-size: 30px;
+}
+
+
+.btn-sign-in:hover{
+	background-color: #EDA953;
+}
+
+.btn-sign-in:hover a{
+	color: #48210F;	
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+.menu-slideshow{
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: -1;
+}
+
+
+.menu-nav{
+	width: 100%;
+	height: 50px;
+	background-color: rgb(237, 169, 83);
+	position: fixed;
+	top: 70px;
+	z-index: 2;
+
+}
+
+.menu-nav .box{
+	width: 100px;
+	height: 60px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.menu-nav .box:nth-child(1){
+	margin-left: 27px;
+}
+
+
+.menu-nav .box a{
+	line-height: 60px;
+	color: white;
+	font-size: 35px;
+	transition: 0.5s;
+	color: rgb(84, 55, 21);
+	font-family: 'Galada', cursive;
+}
+
+.menu-cf{
+	width: 100%;
+	height: 1400px;
+	background-image: url("../Images/product/pro-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	position: relative;
+	z-index: -1;
+}
+
+.menu-br{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+
+.menu-tea{
+	width: 100%;
+	height: 1400px;
+	background-image: url("../Images/product/pro-bg2.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	position: relative;
+	z-index: -1;
+}
+
+.menu-cake{
+	width: 100%;
+	height: 1400px;
+	background-image: url("../Images/product/pro-bg3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	position: relative;
+	z-index: -1;
+}
+
+.menu-other{
+	width: 100%;
+	height: 1400px;
+	background-image: url("../Images/product/pro-bg4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	position: relative;
+	z-index: -1;
+}
+
+.menu-heading{
+	width: 1300px;
+	height: 150px;
+	line-height: 150px;
+	color: white;
+	letter-spacing: 3px;
+	border-bottom: 5px solid white;
+	font-family: 'Galada', cursive;
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.coffeeList{
+	width: 1300px;
+	height: 500px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+
+.card{
+	width: 230px;
+	height: 400px;
+	margin-top: 30px;
+	margin-left: 270px;
+	background-color: grey;
+	border-radius: 25px;
+  	box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  	float: left;
+  	position: relative;
+}
+.card:nth-child(1){
+	margin-left: 0px;
+}
+
+.card:nth-child(3){
+	margin-right: 0px;
+}
+.card-head{
+	height: 200px;
+  	background: #32281f; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #32281f 0%, #47362c 15%, #644431 33%, #a97953 67%, #a97953 67%, #fed2a1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #32281f 0%,#47362c 15%,#644431 33%,#a97953 67%,#a97953 67%,#fed2a1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #32281f 0%,#47362c 15%,#644431 33%,#a97953 67%,#a97953 67%,#fed2a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32281f', endColorstr='#fed2a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  	border-radius: 25px 25px 0 0;
+  	position: relative;
+}
+
+.product-img{
+	position: absolute;
+	left: 120px;
+	top: 0;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+}
+
+.product-detail{
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	text-align: left;
+	margin-left: 10px;
+	margin-right: 30px;
+	color: #FFFFFF;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.product-detail h2{
+	border-bottom: 4px solid #94614C;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	font-family: 'Nova Square', cursive;
+	font-size: 30px;
+}
+
+.back-text{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 90px;
+	opacity: 0.2;
+	color: black;
+}
+
+.card-body{
+	width: 230px;
+	height: 210px;
+  	background: #fff;
+  	border-radius: 0 0 25px 25px;
+  	position: relative;
+}
+
+.product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product-title b {
+  font-weight: 900;
+  letter-spacing: 0px;
+
+}
+
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #11e95b;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: -2px;
+  margin-left: 5px;
+}
+
+.product-caption {
+	text-align: left;
+  	display: block;
+  	padding: 0 20px;
+  	font-size: 10px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+}
+
+.rating{
+	clear: both;
+	float: left;
+}
+
+.product-rating {
+	text-align: left;
+  	padding: 0 20px;
+  	font-size: 11px;
+}
+
+.product-rating i.grey {
+  color: #acacab;
+}
+
+.order{
+	width: 230px;
+	height: 0px;
+	background-color: #89330E;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	border-radius: 0 0 25px 25px;
+	transition: 0.3s;
+}
+
+.order h1{
+	line-height: 0px;
+	margin-top: 0;
+	font-size: 0px;
+	font-weight: bold;
+	color: #F3ECAF;
+	transition: 0.5s;
+}
+
+.card:hover .order{
+	opacity: 1;
+	height: 40px;
+}
+
+.card:hover .order h1{
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.order:hover{
+	background-color: #a04721;
+}
+
+.price{
+	width: 130px;
+	height: 40px;
+	background-color: #DA3F1C;
+	border-radius: 10px;
+	position: absolute;
+	right: -20px;
+	bottom: 60px;
+	font-size: 25px;
+	font-weight: 5px;
+	line-height: 40px;
+	color: white;
+	font-family: 'Modern Antiqua', cursive;
+}

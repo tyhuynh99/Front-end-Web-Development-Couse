@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The coffee - Contact</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style_contact.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/sign.css">
+	<script src="js/sign.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	</style>
+</head>
+<body>
+	<center>
+		<div class="container"> <!--Main-->
+				<!-- START HEADER -->
+			<header class="banner" id="Home">
+					<nav id="navbar"> <!-- START NAV -->
+						<!-- LOGO -->
+						<a href="index.html" class="brand-logo">
+						<img src="./Images/logo.png"><span><p>The Coffee</p></span>
+						</a>
+						<!-- NAV MENU -->
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="order.html">Order</a></li>
+							<li><a href="#Home">Contact</a></li>
+						</ul>
+						<!-- SIGN IN/UP BTN -->
+					<div  class="btn-sign-in">
+						<a href="#" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+					</div>
+					<p>Not a member ? <a href="#" onclick="document.getElementById('id02').style.display='block'">sign up</a></p>
+					<div id="id01" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<button type="submit">Login</button>
+			      		<label>
+			        		<input type="checkbox" checked="checked" name="remember"> Remember me
+			      		</label>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1; height: 50px;">
+			      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			     	 	<span class="psw">Forgot <a href="#">password?</a></span>
+			    	</div>
+		  		</form>
+			</div>
+			<div id="id02" class="modal">
+		  		<form class="modal-content animate" action="#">
+			    	<div class="imgcontainer">
+			    		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			    	</div>
+			    	<div class="containerlogin">
+			      		<label for="uname"><b>Username</b></label>
+			      		<input type="text" placeholder="Enter Username" name="uname" required>
+			      		<label for="psw"><b>Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="psw" required>  
+			      		<label for="psw"><b>Repeat-Password</b></label>
+			      		<input type="password" placeholder="Enter Password" name="rpsw" required>
+			    	</div>
+			   		<div class="containerlogin" style="background-color:#f1f1f1">
+			      		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+			     	 	<button type="submit" class="signupbutton">Sign Up</button>
+			    	</div>
+		  		</form>
+					</nav><!-- END NAV -->
+			</header>
+			<div class="contact">
+				<div style="position: relative; width: 1200px; height: 1000px;">
+					<img src="Images/contact1.jpg">
+					<div class="contact-content">
+						<form action="action_page.php">
+						    <label for="fname" class="contact-label">Full Name</br></label>
+						    <input type="text" id="fname" name="firstname" placeholder="Please put your full name here ..."></br>
+						    <label for="lname" class="contact-label">Address</br></label>
+						    <input type="text" id="addr" name="address" placeholder="Please put your address here ..."></br>
+						    <label for="feedback" class="contact-label">FeedBack</br></label>
+						    <textarea id="feedback" name="feedback" placeholder="Please put your feedback here ..." style="height:200px"></textarea></br>
+						    <input type="submit" value="Submit" style="background-color: #89330E; font-size: 20px;font-family: 'Pacifico', cursive; border-radius: 10px; letter-spacing: 2px;">
+						  </form>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4552263292267!2d106.6273561147721!3d10.852939092269624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a228e44c0f9%3A0x213883275b5eff07!2sFPT+University+HCM!5e0!3m2!1sen!2s!4v1541385653641" width="445" height="640" frameborder="0" style="border:0; float: right; margin-top: 10px;" allowfullscreen></iframe>
+				</div>
+			</div>
+			<footer>
+					<div class="ftr-brandname">
+						The Coffee
+					</div>
+					<div class="ftr-logo">
+						<img src="./Images/logo.png">
+					</div>
+					<div class="ftr-phone">
+						<i class="fas fa-phone"> 0123456789</i>
+					</div>
+					<div class="ftr-addr">
+						<i class="fas fa-map-marked-alt"> To Ky Street, Distric 12, HCMC</i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div class="icon-box">
+						<i class="fab fa-twitter"></i>
+					</div>
+			</footer>
+		</div>
+	</center>
+</body>
+</html>
